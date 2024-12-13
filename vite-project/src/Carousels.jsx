@@ -59,7 +59,7 @@ const Carousels = () => {
           {/* Third Slide */}
           <div className="carousel-item">
             <img
-              src="https://wallpapers.com/images/featured/4k-avengers-gx5riyd6eqklm4hf.jpg"
+              src="https://wallpapers.com/images/hd/avengers-characters-m19hfg0oka65qxyb.webp"
               className="d-block w-100 rounded"
               alt="Third Slide"
             />
