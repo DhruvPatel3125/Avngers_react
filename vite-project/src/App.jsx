@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css' 
 import Card from './Card'
 import Carousels from './Carousels'
 import Footer from './Footer'
@@ -17,6 +17,7 @@ function App() {
       <Mission/>
       <Technologies/>
       <Footer/>
+  
     
     </>
   )

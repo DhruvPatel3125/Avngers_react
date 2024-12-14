@@ -8,6 +8,8 @@ import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
+import LoginApp from "./LoginApp";
+import JoinUsApp from "./JoiningUs";
 
 const AvengersNavbar = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -76,13 +78,15 @@ const AvengersNavbar = () => {
         {/* Call to Action */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <Button
-            variant="contained"
-            sx={{ backgroundColor: "#e62429", color: "#f5f5f5" }}
+            // variant="contained"
+            // sx={{ backgroundColor: "#e62429", color: "#f5f5f5" }}
           >
-            Join Us
+            
+            <JoinUsApp/>
           </Button>
           <Button color="inherit" sx={{ color: "#f5f5f5" }}>
-            Login
+            
+            <LoginApp/>
           </Button>
         </Box>
       </Toolbar>
