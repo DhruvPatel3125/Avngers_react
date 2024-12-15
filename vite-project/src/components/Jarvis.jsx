@@ -6,13 +6,21 @@ function Jarvis() {
   const [response, setResponse] = useState("Click here to speak");
   const { transcript, resetTranscript } = useSpeechRecognition();
 
-  // On load, initialize JARVIS
+  // Initialize JARVIS on load
   useEffect(() => {
-    speak("Initializing JARVIS...");
-    wishMe();
+    try {
+      speak("Initializing JARVIS...");
+      wishMe();
+    } catch (error) {
+      console.error("Error during initialization:", error);
+    }
   }, []);
 
   const speak = (text) => {
+    if (!window.speechSynthesis) {
+      console.error("Speech Synthesis is not supported in this browser.");
+      return;
+    }
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = 1;
     utterance.pitch = 1;
@@ -32,6 +40,7 @@ function Jarvis() {
   };
 
   const handleCommand = (message) => {
+    console.log("Received command:", message); // Debugging log
     if (message.includes("hey") || message.includes("hello")) {
       speak("Hello Sir, How May I Help You?");
     } else if (message.includes("open google")) {
@@ -52,15 +61,23 @@ function Jarvis() {
   };
 
   const startListening = () => {
-    resetTranscript(); // Clear previous transcript
-    setResponse("Listening...");
-    SpeechRecognition.startListening();
+    try {
+      resetTranscript(); // Clear previous transcript
+      setResponse("Listening...");
+      SpeechRecognition.startListening();
+    } catch (error) {
+      console.error("Error while starting listening:", error);
+    }
   };
 
   const stopListening = () => {
-    setResponse("Processing...");
-    SpeechRecognition.stopListening();
-    handleCommand(transcript.toLowerCase());
+    try {
+      setResponse("Processing...");
+      SpeechRecognition.stopListening();
+      handleCommand(transcript.toLowerCase());
+    } catch (error) {
+      console.error("Error while stopping listening:", error);
+    }
   };
 
   return (

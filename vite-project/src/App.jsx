@@ -1,11 +1,10 @@
 import './App.css' 
-import Card from './Card'
-import Carousels from './Carousels'
-import Footer from './Footer'
-import Jarvis from './Jarvis'
-import Mission from './Mission'
-import Navbar from './Navbar'
-import Technologies from './Technology'
+import Card from './components/Card'
+import Carousels from './components/Carousels'
+import Footer from './components/Footer'
+import Mission from './components/Mission'
+import Navbar from './components/Navbar'
+import Technologies from './components/Technology'
 
 function App() {
   
@@ -18,7 +17,7 @@ function App() {
       <Mission/>
       <Technologies/>
       <Footer/>
-      <Jarvis/>
+  
   
     
     </>
