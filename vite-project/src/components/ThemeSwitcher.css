@@ -1,0 +1,50 @@
+/* Default light theme styles */
+body.light {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Theme switcher container */
+  .theme-switcher-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Title styles for light and dark themes */
+  .theme-title {
+    font-size: 24px;
+  }
+  
+  .light-text {
+    color: black;
+  }
+  
+  .dark-text {
+    color: white;
+  }
+  
+  /* Button styles for light and dark themes */
+  .theme-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .light-button {
+    background-color: #f0f0f0;
+    color: black;
+  }
+  
+  .dark-button {
+    background-color: #444;
+    color: white;
+  }
+  

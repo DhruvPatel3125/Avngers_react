@@ -10,6 +10,7 @@ import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
 import LoginApp from "./LoginApp";
 import JoinUsApp from "./JoiningUs";
+import ThemeSwitcher from "./SwitchMode";
 
 const AvengersNavbar = () => {
   const [anchorElMissions, setAnchorElMissions] = React.useState(null);
@@ -147,6 +148,9 @@ const AvengersNavbar = () => {
           </Button>
           <Button color="inherit" sx={{ color: "#f5f5f5" }}>
             <LoginApp />
+          </Button>
+          <Button color="inherit" sx={{ color: "#f5f5f5" }}>
+            <ThemeSwitcher/>
           </Button>
         </Box>
       </Toolbar>
