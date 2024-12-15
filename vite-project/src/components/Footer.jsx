@@ -24,10 +24,10 @@ const Footer = () => {
         <div className="footer-social">
           <p><strong>Follow Us:</strong></p>
           <div className="social-links">
-            <a href="https://facebook.com" className="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://twitter.com" className="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://instagram.com" className="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://linkedin.com" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.facebook.com/profile.php?id=100030030765034" className="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://twitter.com/@_dhruv_312" className="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.instagram.com/_.dhruv._312/" className="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/in/dhruvpatel312" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
