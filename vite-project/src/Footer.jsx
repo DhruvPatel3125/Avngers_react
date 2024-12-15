@@ -1,60 +1,38 @@
 import React from 'react';
-import './Footer.css'; // Import the CSS file
+import './Footer.css'; // Ensure this file exists in the same directory
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="row">
-          {/* About Us Section */}
-          <div className="col-md-4">
-            <h3>About Us</h3>
-            <p>
-              We are a tech company that strives to create innovative solutions that
-              help businesses and individuals thrive in the digital age. Our mission
-              is to bridge the gap between technology and users, providing intuitive
-              products and services that make a difference.
-            </p>
-          </div>
+    <footer className="footer-container">
+      <div className="footer-content">
+        <div className="footer-links">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
 
-          {/* Quick Links Section */}
-          <div className="col-md-4">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
+        <div className="footer-contact">
+          <p><strong>Contact Us:</strong></p>
+          <p>Surat, India</p>
+          <p>Phone: 9824934361</p>
+          <p>Email: dhruvjpatel5@gmail.com</p>
+        </div>
 
-          {/* Newsletter Signup and Social Media Section */}
-          <div className="col-md-4">
-            <h3>Stay Updated</h3>
-            <form action="#" method="post" className="newsletter-form">
-              <input type="email" name="email" placeholder="Enter your email" required />
-              <button type="submit">Subscribe</button>
-            </form>
-            <h3>Follow Us</h3>
-            <ul className="social-icons">
-              <li><a href="#" aria-label="Facebook">Facebook<i className="fab fa-facebook-f"></i></a></li>
-              <li><a href="#" aria-label="Twitter">Twitter<i className="fab fa-twitter"></i></a></li>
-              <li><a href="_.dhruv._312" aria-label="Instagram">Instagram<i className="fab fa-instagram"></i></a></li>
-            </ul>
+        <div className="footer-social">
+          <p><strong>Follow Us:</strong></p>
+          <div className="social-links">
+            <a href="https://facebook.com" className="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://twitter.com" className="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://instagram.com" className="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://linkedin.com" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
 
-      {/* Contact Information Section */}
-      <div className="contact-info">
-        <p><strong>Contact Us:</strong> Nana Varachha,Surat</p>
-        <p><strong>Phone:</strong> 9824934361</p>
-        <p><strong>Email:</strong> dhruvjpatel5@gmail.com</p>
-      </div>
-
-      {/* Copyright Section */}
-      <div className="copyright text-center">
+      <div className="footer-bottom">
         <p>&copy; 2024 Tech Company. All rights reserved.</p>
       </div>
     </footer>
