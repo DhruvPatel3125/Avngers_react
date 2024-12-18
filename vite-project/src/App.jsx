@@ -1,5 +1,5 @@
 import './App.css' 
-import Card from './components/Card'
+import Card from './components/Character'
 import Carousels from './components/Carousels'
 import Footer from './components/Footer'
 import Mission from './components/Mission'

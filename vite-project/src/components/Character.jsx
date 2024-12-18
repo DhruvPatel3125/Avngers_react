@@ -4,101 +4,79 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
-import c1 from "../image/card-1.avif"
-import c2 from "../image/card-2.webp"
-import c3 from "../image/card-3.webp"
-import c4 from "../image/card-4.jpg"
-import c5 from "../image/card-5.webp"
-import c6 from "../image/card-6.webp"
-import c7 from "../image/card-7.webp"
-import c8 from "../image/card-8.webp"
-import c9 from "../image/card-9.webp"
-import c10 from "../image/card-10.webp"
-import c11 from "../image/card-11.webp"
-import c12 from "../image/card-12.webp"
+import c1 from "../image/card-1.avif";
+import c2 from "../image/card-2.webp";
+import c3 from "../image/card-3.webp";
+import c4 from "../image/card-4.jpg";
+import c5 from "../image/card-5.webp";
+import c6 from "../image/card-6.webp";
+import c7 from "../image/card-7.webp";
+import c8 from "../image/card-8.webp";
+import c9 from "../image/card-9.webp";
+import c10 from "../image/card-10.webp";
+import c11 from "../image/card-11.webp";
+import c12 from "../image/card-12.webp";
 
 
 export default function ActionAreaCard() {
   return (
     <div className="container mt-4">
+      <Typography variant="h4" align="center" gutterBottom>
+        Avengers Characters
+      </Typography>
       <div className="row gy-4">
         {/* Existing Cards */}
-
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c1}
-                alt="Iron Man"
-              />
+              <CardMedia component="img" height="140" image={c1} alt="Iron Man" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Iron Man
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Iron Man is the best leader of the Avengers and in Marvel
-                  universe.
+                  Iron Man is the best leader of the Avengers and in the Marvel universe.
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </div>
-
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c2}
-                alt="Captain America"
-              />
+              <CardMedia component="img" height="140" image={c2} alt="Captain America" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Captain America
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Recipient of the Super Soldier serum, Steve Rogers fights for
-                  American ideals.
+                  Recipient of the Super Soldier serum, Steve Rogers fights for American ideals.
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </div>
-
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c3}
-                alt="Thor"
-              />
+              <CardMedia component="img" height="140" image={c3} alt="Thor" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Thor
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Thor, the God of Thunder, embarks on a journey of
-                  self-discovery.
+                  Thor, the God of Thunder, embarks on a journey of self-discovery.
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </div>
 
+        {/* Additional Characters - New Cards */}
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c4}
-                alt="Spider-Man"
-              />
+              <CardMedia component="img" height="140" image={c4} alt="Spider-Man" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Spider-Man
@@ -110,22 +88,17 @@ export default function ActionAreaCard() {
             </CardActionArea>
           </Card>
         </div>
+
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c5}
-                alt="Black Panther"
-              />
+              <CardMedia component="img" height="140" image={c5} alt="Black Panther" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Black Panther
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  T'Challa, the king of Wakanda, defends his nation as the
-                  powerful and noble Black Panther.
+                  T'Challa, the king of Wakanda, defends his nation as the powerful and noble Black Panther.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -133,38 +106,26 @@ export default function ActionAreaCard() {
         </div>
 
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c6}
-                alt="Hulk"
-              />
+              <CardMedia component="img" height="140" image={c6} alt="Hulk" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Hulk (Bruce Banner)
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Scientist Bruce Banner transforms into the green rage machine,
-                  Hulk.
+                  Scientist Bruce Banner transforms into the green rage machine, Hulk.
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </div>
 
-        {/* New Cards */}
-
+        {/* New Cards for Additional Characters */}
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c7}
-                alt="Black Widow"
-              />
+              <CardMedia component="img" height="140" image={c7} alt="Black Widow" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Black Widow
@@ -178,14 +139,9 @@ export default function ActionAreaCard() {
         </div>
 
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c8}
-                alt="Scarlet Witch"
-              />
+              <CardMedia component="img" height="140" image={c8} alt="Scarlet Witch" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Scarlet Witch (Wanda Maximoff)
@@ -199,14 +155,9 @@ export default function ActionAreaCard() {
         </div>
 
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c9}
-                alt="Loki"
-              />
+              <CardMedia component="img" height="140" image={c9} alt="Loki" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Loki
@@ -220,14 +171,9 @@ export default function ActionAreaCard() {
         </div>
 
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c10}
-                alt="Vision"
-              />
+              <CardMedia component="img" height="140" image={c10} alt="Vision" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Vision
@@ -241,14 +187,9 @@ export default function ActionAreaCard() {
         </div>
 
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c11}
-                alt="Ant-Man"
-              />
+              <CardMedia component="img" height="140" image={c11} alt="Ant-Man" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Ant-Man
@@ -262,14 +203,9 @@ export default function ActionAreaCard() {
         </div>
 
         <div className="col-md-6 col-lg-4">
-          <Card className="shadow">
+          <Card className="shadow" sx={{ padding: "16px" }}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={c12}
-                alt="Doctor Strange"
-              />
+              <CardMedia component="img" height="140" image={c12} alt="Doctor Strange" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Doctor Strange
@@ -281,7 +217,6 @@ export default function ActionAreaCard() {
             </CardActionArea>
           </Card>
         </div>
-
       </div>
     </div>
   );
