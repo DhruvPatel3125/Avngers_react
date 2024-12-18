@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardMedia, CardContent, Typography, Grid, Container } from '@mui/material';
-// import './Mission.css'; // Custom CSS for additional styling
 import ma from "../image/m1.webp";
 import m2 from '../image/m2.webp';
 import m3 from '../image/m3.webp';
