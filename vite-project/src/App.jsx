@@ -7,21 +7,24 @@ import Navbar from './components/Navbar'
 import Technologies from './components/Technology'
 
 function App() {
-  
-
   return (
     <>
-      <Navbar/>
-      <Carousels/><br /><br />
-      <Card/><br /><br />
-      <Mission/>
-      <Technologies/>
-      <Footer/>
-  
-  
-    
+      <Navbar />
+      <div className="spacing">
+        <Carousels />
+      </div>
+      <div className="spacing">
+        <Card />
+      </div>
+      <div className="spacing">
+        <Mission />
+      </div>
+      <div className="spacing">
+        <Technologies />
+      </div>
+      <Footer />
     </>
   )
 }
 
-export default App
+export default App;
