@@ -4,6 +4,19 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
+import c1 from "../image/card-1.avif"
+import c2 from "../image/card-2.webp"
+import c3 from "../image/card-3.webp"
+import c4 from "../image/card-4.jpg"
+import c5 from "../image/card-5.webp"
+import c6 from "../image/card-6.webp"
+import c7 from "../image/card-7.webp"
+import c8 from "../image/card-8.webp"
+import c9 from "../image/card-9.webp"
+import c10 from "../image/card-10.webp"
+import c11 from "../image/card-11.webp"
+import c12 from "../image/card-12.webp"
+
 
 export default function ActionAreaCard() {
   return (
@@ -17,7 +30,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://images.unsplash.com/photo-1657558045738-21507cf53606?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZlbmdlcnN8ZW58MHx8MHx8fDA%3D"
+                image={c1}
                 alt="Iron Man"
               />
               <CardContent>
@@ -39,7 +52,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/hd/marvel-captain-america-headshot-izd7nkymaau5a7ba.webp"
+                image={c2}
                 alt="Captain America"
               />
               <CardContent>
@@ -61,7 +74,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/high/thor-hammer-1920-x-1080-piuqoc68ba2ben21.webp"
+                image={c3}
                 alt="Thor"
               />
               <CardContent>
@@ -83,7 +96,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://cdn.marvel.com/content/1x/spidey02_ons_var_dsk_01.jpg"
+                image={c4}
                 alt="Spider-Man"
               />
               <CardContent>
@@ -103,7 +116,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/high/black-panther-hero-kgwks04h9m9c9zhk.webp"
+                image={c5}
                 alt="Black Panther"
               />
               <CardContent>
@@ -125,7 +138,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/hd/gladiator-hulk-fan-art-5rgmptkhlzwb8fp1.webp"
+                image={c6}
                 alt="Hulk"
               />
               <CardContent>
@@ -149,7 +162,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/high/black-widow-pose-4k-marvel-iphone-ipfbpdwchomr4rww.webp"
+                image={c7}
                 alt="Black Widow"
               />
               <CardContent>
@@ -170,7 +183,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/high/wanda-maximoff-scarlet-witch-evt29k972vz3ewq5.webp"
+                image={c8}
                 alt="Scarlet Witch"
               />
               <CardContent>
@@ -191,7 +204,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/hd/loki-in-black-17t0qozgkz6fyix0.webp"
+                image={c9}
                 alt="Loki"
               />
               <CardContent>
@@ -212,7 +225,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/high/vision-avengers-6efrl9hlqfavc70w.webp"
+                image={c10}
                 alt="Vision"
               />
               <CardContent>
@@ -233,7 +246,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/high/ant-man-in-fight-mode-0l9g75m5ocf4hoaa.webp"
+                image={c11}
                 alt="Ant-Man"
               />
               <CardContent>
@@ -254,7 +267,7 @@ export default function ActionAreaCard() {
               <CardMedia
                 component="img"
                 height="140"
-                image="https://wallpapers.com/images/high/dr-strange-hand-power-2ktt4a4iez0e7tcz.webp"
+                image={c12}
                 alt="Doctor Strange"
               />
               <CardContent>

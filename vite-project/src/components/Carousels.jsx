@@ -1,4 +1,7 @@
 import React from 'react';
+import i1 from "../image/col-1.jpg"
+import i2 from "../image/col-2.jpg"
+import i3 from "../image/col-3.webp"
 
 const Carousels = () => {
   return (
@@ -35,7 +38,7 @@ const Carousels = () => {
           {/* First Slide */}
           <div className="carousel-item active" data-bs-interval="5000">
             <img
-              src="https://wallpapers.com/images/hd/4k-marvel-digital-cartoon-t9z4pnuivn6488jq.jpg"
+              src={i1}
               className="d-block w-100 rounded"
               alt="First Slide"
             />
@@ -47,7 +50,7 @@ const Carousels = () => {
           {/* Second Slide */}
           <div className="carousel-item" data-bs-interval="5000">
             <img
-              src="https://wallpapersok.com/images/hd/epic-moment-from-avengers-in-4k-jcm1nji0j5z8qx6n.jpg"
+              src={i2}
               className="d-block w-100 rounded"
               alt="Second Slide"
             />
@@ -59,7 +62,7 @@ const Carousels = () => {
           {/* Third Slide */}
           <div className="carousel-item">
             <img
-              src="https://wallpapers.com/images/hd/avengers-characters-m19hfg0oka65qxyb.webp"
+              src={i3}
               className="d-block w-100 rounded"
               alt="Third Slide"
             />
