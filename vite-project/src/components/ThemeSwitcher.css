@@ -1,50 +1,25 @@
-/* Default light theme styles */
 body.light {
-    background-color: white;
-    color: black;
-  }
-  
-  body.dark {
-    background-color: #333;
-    color: white;
-  }
-  
-  /* Theme switcher container */
-  .theme-switcher-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* Title styles for light and dark themes */
-  .theme-title {
-    font-size: 24px;
-  }
-  
-  .light-text {
-    color: black;
-  }
-  
-  .dark-text {
-    color: white;
-  }
-  
-  /* Button styles for light and dark themes */
-  .theme-button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  .light-button {
-    background-color: #f0f0f0;
-    color: black;
-  }
-  
-  .dark-button {
-    background-color: #444;
-    color: white;
-  }
-  
+  background-color: #ffffff;
+  color: #333333;
+}
+
+body.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.theme-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.theme-button.light-button i {
+  color: #ffa500; /* Sun icon color */
+}
+
+.theme-button.dark-button i {
+  color: #4da6ff; /* Moon icon color */
+}

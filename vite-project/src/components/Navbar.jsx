@@ -39,7 +39,13 @@ const AvengersNavbar = () => {
         </Typography>
 
         {/* Navbar Links */}
-        <Box sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", gap: 2 }}>
+        <Box
+          sx={{
+            display: { xs: "none", md: "flex" },
+            alignItems: "center",
+            gap: 2,
+          }}
+        >
           {/* Home Dropdown */}
           <Button
             color="inherit"
@@ -54,8 +60,12 @@ const AvengersNavbar = () => {
             onClose={() => handleMenuClose(setAnchorElHome)}
             sx={{ mt: 1 }}
           >
-            <MenuItem onClick={() => handleMenuClose(setAnchorElHome)}>Go to Homepage</MenuItem>
-            <MenuItem onClick={() => handleMenuClose(setAnchorElHome)}>About Us</MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElHome)}>
+              Go to Homepage
+            </MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElHome)}>
+              About Us
+            </MenuItem>
           </Menu>
 
           {/* Heroes Dropdown */}
@@ -72,8 +82,12 @@ const AvengersNavbar = () => {
             onClose={() => handleMenuClose(setAnchorElHeroes)}
             sx={{ mt: 1 }}
           >
-            <MenuItem onClick={() => handleMenuClose(setAnchorElHeroes)}>View All Heroes</MenuItem>
-            <MenuItem onClick={() => handleMenuClose(setAnchorElHeroes)}>Hero Details</MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElHeroes)}>
+              View All Heroes
+            </MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElHeroes)}>
+              Hero Details
+            </MenuItem>
           </Menu>
 
           {/* Missions Dropdown */}
@@ -90,8 +104,12 @@ const AvengersNavbar = () => {
             onClose={() => handleMenuClose(setAnchorElMissions)}
             sx={{ mt: 1 }}
           >
-            <MenuItem onClick={() => handleMenuClose(setAnchorElMissions)}>Current Missions</MenuItem>
-            <MenuItem onClick={() => handleMenuClose(setAnchorElMissions)}>Completed Missions</MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElMissions)}>
+              Current Missions
+            </MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElMissions)}>
+              Completed Missions
+            </MenuItem>
           </Menu>
 
           {/* Technology Dropdown */}
@@ -108,8 +126,12 @@ const AvengersNavbar = () => {
             onClose={() => handleMenuClose(setAnchorElTech)}
             sx={{ mt: 1 }}
           >
-            <MenuItem onClick={() => handleMenuClose(setAnchorElTech)}>Tech Stack</MenuItem>
-            <MenuItem onClick={() => handleMenuClose(setAnchorElTech)}>How It Works</MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElTech)}>
+              Tech Stack
+            </MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElTech)}>
+              How It Works
+            </MenuItem>
           </Menu>
 
           {/* Contact Us Dropdown */}
@@ -126,11 +148,15 @@ const AvengersNavbar = () => {
             onClose={() => handleMenuClose(setAnchorElContact)}
             sx={{ mt: 1 }}
           >
-            <MenuItem onClick={() => handleMenuClose(setAnchorElContact)}>Contact Form</MenuItem>
-            <MenuItem onClick={() => handleMenuClose(setAnchorElContact)}>Reach Us via Email</MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElContact)}>
+              Contact Form
+            </MenuItem>
+            <MenuItem onClick={() => handleMenuClose(setAnchorElContact)}>
+              Reach Us via Email
+            </MenuItem>
           </Menu>
         </Box>
-
+ 
         {/* Mobile Menu Button */}
         <IconButton
           edge="start"
@@ -143,16 +169,32 @@ const AvengersNavbar = () => {
 
         {/* Call to Action */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-          <Button>
-            <JoinUsApp />
-          </Button>
-          <Button color="inherit" sx={{ color: "#f5f5f5" }}>
-            <LoginApp />
-          </Button>
-          <Button color="inherit" sx={{ color: "#f5f5f5" }}>
-            <ThemeSwitcher/>
-          </Button>
-        </Box>
+  {/* Join Us Button */}
+  <Button>
+    <JoinUsApp />
+  </Button>
+
+  {/* Login Button */}
+  <Button color="inherit" sx={{ color: "#f5f5f5" }}>
+    <LoginApp />
+  </Button>
+
+  {/* Try AI Button */}
+  <Button
+    color="inherit"
+    href="https://dhruvpatel3125.github.io/Jarvis-AI-main/"
+    target="_blank"
+    sx={{ color: "#f5f5f5", textTransform: "none" }}
+  >
+    Try AI
+  </Button>
+
+  {/* Theme Switcher */}
+  <Button color="inherit" sx={{ color: "#f5f5f5" }}>
+    <ThemeSwitcher />
+  </Button>
+</Box>
+
       </Toolbar>
     </AppBar>
   );

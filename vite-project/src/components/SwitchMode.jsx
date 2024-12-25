@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ThemeSwitcher.css';  // Importing the CSS file for styling
+import './ThemeSwitcher.css'; // Importing the CSS file for styling
 
 const ThemeSwitcher = () => {
   const [theme, setTheme] = useState('light');
@@ -15,14 +15,16 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div>
-      <button
-        onClick={toggleTheme}
-        className={`theme-button ${theme === 'light' ? 'light-button' : 'dark-button'}`}
-      >
-        Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
-      </button>
-    </div>
+    <button
+      onClick={toggleTheme}
+      className={`theme-button ${theme === 'light' ? 'light-button' : 'dark-button'}`}
+    >
+      {theme === 'light' ? (
+        <i className="fa-solid fa-sun"></i> // Sun icon for light mode
+      ) : (
+        <i className="fa-solid fa-moon"></i> // Moon icon for dark mode
+      )}
+    </button>
   );
 };
 
