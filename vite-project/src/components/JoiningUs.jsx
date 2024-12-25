@@ -39,7 +39,7 @@ function JoinUsApp() {
     <div>
       {/* Join Us Button */}
       <button onClick={handleJoinClick} style={buttonStyle}>
-        Join Us
+        Join
       </button>
 
       {/* Join Us Form (conditionally rendered) */}

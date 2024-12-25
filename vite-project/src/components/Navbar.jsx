@@ -140,7 +140,7 @@ const AvengersNavbar = () => {
             sx={{ color: "#f5f5f5" }}
             onClick={(e) => handleMenuOpen(e, setAnchorElContact)}
           >
-            Contact Us
+            Contact
           </Button>
           <Menu
             anchorEl={anchorElContact}
